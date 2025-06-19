@@ -1,0 +1,168 @@
+body{
+  background-color: #a8d0e6;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px; 
+  height: 550px;
+  width:  500px;
+  background-color:#e0e0e0;
+  box-shadow:10px 10px 10px  #555;
+  }
+
+#value{
+  border-radius: 20px;
+  background-color: #f5f0f0;
+  width: 99%;
+  height: 70px;
+  border: 3px solid white;
+  filter: drop-shadow(1px 3px #555);
+}
+
+#value:hover{
+  text-align: right;
+  font-size: large;
+  
+  border: 3px solid rgb(240, 238, 238);
+}
+
+#value:active{
+  border: 3px solid rgb(240, 238, 238)  ;
+}
+
+.number-btn{
+  filter: drop-shadow(2px 3px 4px  #555);
+  border-radius: 50%;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  background-color: #ffffff ;
+  border: 1px solid #ffffff;
+  font-weight: 700;
+  font-size: large;
+}
+
+.value-btn{
+  filter: drop-shadow(2px 3px 4px  #555);
+  font-size: large;
+  font-weight: 700;
+  border-radius: 50%;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid #9ecbff;
+  background-color: #9ecbff;
+}
+
+#equal{
+  font-size: large;
+  border-radius: 50px;
+  margin: 10px;
+  height: 50px;
+  width: 125px;
+  background-color: #fbd38d; 
+  font-weight: 700;
+  border: none;
+}
+
+#cross{
+  background-color: #fbd38d; 
+  border: none;
+  font-weight: 700;
+  font-size: large;  
+}
+
+.num-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ac{
+  font-size: large;
+  background-color: #f28b82;
+  border: none;
+}
+
+.value-btn:hover{
+  cursor: pointer;
+  height: 75px;
+  width: 75px;
+}
+
+.number-btn:hover{
+  cursor: pointer;
+  height: 75px;
+  width: 75px;
+}
+
+#equal:hover{
+  cursor: pointer;
+  height: 55px;
+  width: 130px
+}
+
+#equal:active{
+ background-color: #a8926c;
+ height: 50px;
+ width: 125px;
+}
+
+.number-btn:active{
+  background-color: #d4d1d1 ;
+  height: 70px;
+  width: 70px;
+}
+
+.value-btn:active{
+  background-color: #516d8e;
+  height: 70px;
+  width: 70px;
+}
+
+#ac:active{
+  background-color: #a35f59;
+}
+
+#cross:active{
+    background-color:#ad9366;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .number-btn,
+  .value-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  #equal {
+    width: 100px;
+    height: 50px;
+  }
+
+  #value {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+  }
+}
